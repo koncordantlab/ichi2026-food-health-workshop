@@ -41,15 +41,6 @@
             color: #0d6efd;
             font-weight: bold;
         }
-        .strikethrough {
-            text-decoration: line-through;
-            color: #999;
-            margin-right: 10px;
-        }
-        .new-date {
-            color: #d63384; /* Highlight color for new date */
-            font-weight: bold;
-        }
         .organizer-card {
             margin-bottom: 20px;
         }
@@ -57,12 +48,24 @@
         #contact {
             background-color: #f1f3f5;
         }
+        /* Submission Button Container */
+        .submission-container {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #e9ecef;
+        }
+        .btn-submit {
+            padding: 15px 40px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
         footer {
             background-color: #343a40;
             color: white;
             text-align: center;
             padding: 20px 0;
-            margin-top: 0; /* Removed margin since Contact is now above it */
+            margin-top: 0;
         }
         footer a {
             color: #adb5bd;
@@ -123,6 +126,14 @@
         </div>
     </section>
 
+    <!--<div class="submission-container">-->
+    <!--    <div class="container">-->
+    <!--        <a href="[easychair link placeholder]" class="btn btn-primary btn-submit rounded-pill shadow" target="_blank">-->
+    <!--            <i class="bi bi-file-earmark-arrow-up"></i> Submit via EasyChair-->
+    <!--        </a>-->
+    <!--    </div>-->
+    <!--</div>-->
+
     <section id="dates" class="section-padding bg-light">
         <div class="container">
             <div class="row">
@@ -138,14 +149,11 @@
                         </div>
                         <div class="list-group-item d-flex justify-content-between align-items-center">
                             <span>Notification of acceptance</span>
-                            <strong>March 21, 2026</strong>
+                            <strong>March 28, 2026</strong>
                         </div>
                         <div class="list-group-item d-flex justify-content-between align-items-center">
                             <span>Camera-ready workshop paper due</span>
-                            <span>
-                                <span class="strikethrough">March 28, 2026</span>
-                                <span class="new-date">April 7, 2026</span>
-                            </span>
+                            <strong>April 7, 2026</strong>
                         </div>
                         <div class="list-group-item d-flex justify-content-between align-items-center">
                             <span>Workshop Date</span>
@@ -172,7 +180,7 @@
                 </ul>
 
                 <h4 class="mt-4">Submission Types</h4>
-                <p>All submissions must follow the IEEE ICHI 2026 format.</p>
+                <p>All submissions must follow the <a href="https://www.ieee.org/conferences/publishing/templates" target="_blank">IEEE ICHI 2026 format</a>.</p>
                 <ul>
                     <li><strong>Full papers:</strong> Up to 10 pages.</li>
                     <li><strong>Short papers:</strong> Up to 6 pages.</li>
@@ -181,6 +189,14 @@
             </div>
         </div>
     </section>
+
+    <div class="submission-container" style="background-color: white;">
+        <div class="container">
+            <a href="[easychair link placeholder]" class="btn btn-primary btn-submit rounded-pill shadow" target="_blank">
+                <i class="bi bi-file-earmark-arrow-up"></i> Submit via EasyChair
+            </a>
+        </div>
+    </div>
 
     <section id="organization" class="section-padding bg-light">
         <div class="container">
@@ -204,15 +220,15 @@
             <div class="row mt-5">
                 <div class="col-lg-8 mx-auto">
                     <h4 class="text-center mb-4">Program Committee</h4>
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item mx-3">Antrea Christou (Wright State University)</li>
-                        <li class="list-inline-item mx-3">Aryan Dalal (Kansas State University)</li>
-                        <li class="list-inline-item mx-3">Yigit Küçük (Collaborative Drug Discovery)</li>
-                        <li class="list-inline-item mx-3">Anmol Saini (Wright State University)</li>
-                        <li class="list-inline-item mx-3">Cogan Shimizu (Wright State University)</li>
-                        <li class="list-inline-item mx-3">Nirmal Gelal (Kansas State University)</li>
-                        <li class="list-inline-item mx-3">Yinglun Zhang (Kansas State University)</li>
-                        <li class="list-inline-item mx-3">Soheil Abadifard (Kansas State University)</li>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-2">Antrea Christou (Wright State University)</li>
+                        <li class="mb-2">Aryan Dalal (Kansas State University)</li>
+                        <li class="mb-2">Yigit Küçük (Collaborative Drug Discovery)</li>
+                        <li class="mb-2">Anmol Saini (Wright State University)</li>
+                        <li class="mb-2">Cogan Shimizu (Wright State University)</li>
+                        <li class="mb-2">Nirmal Gelal (Kansas State University)</li>
+                        <li class="mb-2">Yinglun Zhang (Kansas State University)</li>
+                        <li class="mb-2">Soheil Abadifard (Kansas State University)</li>
                     </ul>
                 </div>
             </div>
@@ -226,13 +242,17 @@
                 <div class="col-md-8">
                     <p class="mb-2">For any inquiries regarding the workshop, please contact:</p>
                     <ul class="list-unstyled">
-                        <li class="mb-2">
+                        <li class="mb-3">
                             <strong>Hande Küçük McGinty, Ph.D.</strong><br>
                             <a href="mailto:hande@k-state.edu" class="text-decoration-none">hande@k-state.edu</a>
                         </li>
-                        <li class="mb-2">
+                        <li class="mb-3">
                             <strong>Kathleen Jagodnik, Ph.D.</strong><br>
                             <a href="mailto:kmjagodnik@k-state.edu" class="text-decoration-none">kmjagodnik@k-state.edu</a>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Muhammad (Tuan) Amith, Ph.D.</strong><br>
+                            <a href="mailto:muamith@utmb.edu" class="text-decoration-none">muamith@utmb.edu</a>
                         </li>
                     </ul>
                 </div>
