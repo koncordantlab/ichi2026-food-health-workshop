@@ -240,7 +240,12 @@
                             </tr>
                             <tr>
                                 <td class="text-nowrap" style="font-variant-numeric: tabular-nums;">10:15 AM &ndash; 11:00 AM</td>
-                                <td><strong>Keynote: FoodOn and Other Food Ontologies</strong></td>
+                                <td>
+                                    <strong>Keynote: Marrying Knowledge Graphs and Food, a Recipe for OWL Reasoning.</strong><br>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#keynoteModal" class="text-decoration-none mt-1 d-inline-block" style="font-size: 0.9em;">
+                                        <i class="bi bi-info-circle"></i> View Abstract
+                                    </a>
+                                </td>
                                 <td><strong>Damion Dooley</strong><br><span class="text-muted">Simon Fraser University</span></td>
                             </tr>
                             <tr>
@@ -386,5 +391,28 @@
             });
         });
     </script>
+    <!-- Keynote Abstract Modal -->
+    <div class="modal fade" id="keynoteModal" tabindex="-1" aria-labelledby="keynoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="keynoteModalLabel">Keynote Abstract</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3" style="color: #00629B;">Marrying Knowledge Graphs and Food, a Recipe for OWL Reasoning.</h4>
+                    <p>We are journeying into a future where organisations have an easier time of mutually beneficial sharing of their operational knowledge graph parts with research, business, regulatory and consumer partners. The benefits occur in a wide range of domains:</p>
+                    <ul>
+                        <li>Describing food supply chain supply and demand patterns and issues</li>
+                        <li>On-demand public health food traceability of suspected contaminants</li>
+                        <li>The food transformation achieved by home recipe and industrial formulations.</li>
+                        <li>Analytic or estimated validation of nutritional content.</li>
+                        <li>A personalized understanding of health impacts via bioavailability of nutrients.</li>
+                    </ul>
+                    <p>Producing a knowledge graph to support these multifaceted uses requires a generalized approach & shared language for capturing the varying semantics of such uses as they overlap use cases. FoodOn aims to provide the terminology for populating a knowledge graph in terms of food material in production phase, before and after harvest, and into the food storage and processing phase. Here we look at the recently formalized FoodOn food material category hierarchy, as well as a “material (noun), characteristic (adjective), and process” triumvirate of closely related terms that usually occur individually in many standards and databases, which ontology-driven reasoning can bring inferential power to. This work builds on the OBO Foundry family of life sciences and its many evolving vocabularies covering anatomy, taxonomy, chemistry, nutritional and material processing terms. Together, these vocabularies and food knowledge patterns can provide a more fundamental semantic layer for LLM and other AI to leverage and contribute to.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
